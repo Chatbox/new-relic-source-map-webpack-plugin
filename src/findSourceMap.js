@@ -10,7 +10,7 @@ module.exports = children => {
        }
 
        if (typeof i === "string" && sourceMapPartials.length > 1) {
-          m = i.split("sourceMappingURL=")[1];
+          m = sourceMapPartials[1];
        }
        return m;
     }, '');
